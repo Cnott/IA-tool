@@ -1,0 +1,34 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+"java (Mar 6, 2018 12:13:15 PM)/pretested-integration/src/main/java",org.jenkinsci.plugins.pretestedintegration,SCMBridgeDescriptor,9,0,0,0,2,0,2,0,2,0
+"java (Mar 6, 2018 12:13:15 PM)/pretested-integration/src/main/java",org.jenkinsci.plugins.pretestedintegration,PretestedIntegrationPostCheckout.DescriptorImpl,7,0,0,0,3,0,3,0,3,0
+"java (Mar 6, 2018 12:13:15 PM)/pretested-integration/src/main/java",org.jenkinsci.plugins.pretestedintegration,IntegrationStrategy,10,3,0,0,2,1,2,1,2,1
+"java (Mar 6, 2018 12:13:15 PM)/pretested-integration/src/main/java",org.jenkinsci.plugins.pretestedintegration,PretestedIntegrationJobDslExtension,71,0,7,0,12,0,7,0,3,0
+"java (Mar 6, 2018 12:13:15 PM)/pretested-integration/src/main/java",org.jenkinsci.plugins.pretestedintegration,PretestedIntegrationPostCheckout,259,28,22,0,51,8,17,3,6,3
+"java (Mar 6, 2018 12:13:15 PM)/pretested-integration/src/main/java",org.jenkinsci.plugins.pretestedintegration,IntegrationStrategyDescriptor,13,0,2,0,4,0,3,0,2,0
+"java (Mar 6, 2018 12:13:15 PM)/pretested-integration/src/main/java",org.jenkinsci.plugins.pretestedintegration,PretestedIntegrationPostCheckout.new MatrixAggregator() {...},19,0,0,0,3,0,2,0,2,0
+"java (Mar 6, 2018 12:13:15 PM)/pretested-integration/src/main/java",org.jenkinsci.plugins.pretestedintegration,AbstractSCMBridge,241,11,14,0,52,5,21,2,14,2
+"java (Mar 6, 2018 12:13:15 PM)/pretested-integration/src/main/java",org.jenkinsci.plugins.pretestedintegration.exceptions,UnsupportedConfigurationException,10,0,0,0,4,0,2,0,2,0
+"java (Mar 6, 2018 12:13:15 PM)/pretested-integration/src/main/java",org.jenkinsci.plugins.pretestedintegration.exceptions,BranchDeletionFailedException,13,0,0,0,6,0,3,0,3,0
+"java (Mar 6, 2018 12:13:15 PM)/pretested-integration/src/main/java",org.jenkinsci.plugins.pretestedintegration.exceptions,PushFailedException,4,0,0,0,2,0,1,0,1,0
+"java (Mar 6, 2018 12:13:15 PM)/pretested-integration/src/main/java",org.jenkinsci.plugins.pretestedintegration.exceptions,IntegrationUnknownFailureException,18,0,0,0,8,0,4,0,4,0
+"java (Mar 6, 2018 12:13:15 PM)/pretested-integration/src/main/java",org.jenkinsci.plugins.pretestedintegration.exceptions,NothingToDoException,4,10,0,0,2,2,1,1,1,1
+"java (Mar 6, 2018 12:13:15 PM)/pretested-integration/src/main/java",org.jenkinsci.plugins.pretestedintegration.exceptions,CommitFailedException,4,0,0,0,2,0,1,0,1,0
+"java (Mar 6, 2018 12:13:15 PM)/pretested-integration/src/main/java",org.jenkinsci.plugins.pretestedintegration.exceptions,EstablishingWorkspaceFailedException,5,0,0,0,2,0,1,0,1,0
+"java (Mar 6, 2018 12:13:15 PM)/pretested-integration/src/main/java",org.jenkinsci.plugins.pretestedintegration.exceptions,IntegrationFailedException,18,0,0,0,8,0,4,0,4,0
+"java (Mar 6, 2018 12:13:15 PM)/pretested-integration/src/main/java",org.jenkinsci.plugins.pretestedintegration.scm.git,GitBridge.DescriptorImpl,37,0,4,0,10,0,6,0,4,0
+"java (Mar 6, 2018 12:13:15 PM)/pretested-integration/src/main/java",org.jenkinsci.plugins.pretestedintegration.scm.git,AccumulatedCommitStrategy.DescriptorImpl,11,0,0,0,5,0,3,0,3,0
+"java (Mar 6, 2018 12:13:15 PM)/pretested-integration/src/main/java",org.jenkinsci.plugins.pretestedintegration.scm.git,GitBridge,929,57,46,4,169,12,44,6,19,6
+"java (Mar 6, 2018 12:13:15 PM)/pretested-integration/src/main/java",org.jenkinsci.plugins.pretestedintegration.scm.git,FindCommitAuthorCallback,16,6,0,0,4,3,1,1,1,1
+"java (Mar 6, 2018 12:13:15 PM)/pretested-integration/src/main/java",org.jenkinsci.plugins.pretestedintegration.scm.git,GetAllCommitsFromBranchCallback,236,0,2,0,35,0,4,0,3,0
+"java (Mar 6, 2018 12:13:15 PM)/pretested-integration/src/main/java",org.jenkinsci.plugins.pretestedintegration.scm.git,PretestTriggerCommitAction,15,15,0,0,6,6,1,1,1,1
+"java (Mar 6, 2018 12:13:15 PM)/pretested-integration/src/main/java",org.jenkinsci.plugins.pretestedintegration.scm.git,GetCommitCountFromBranchCallback,43,9,2,0,13,4,2,1,1,1
+"java (Mar 6, 2018 12:13:15 PM)/pretested-integration/src/main/java",org.jenkinsci.plugins.pretestedintegration.scm.git,FindCommitMessageCallback,21,0,0,0,7,0,2,0,2,0
+"java (Mar 6, 2018 12:13:15 PM)/pretested-integration/src/main/java",org.jenkinsci.plugins.pretestedintegration.scm.git,AccumulatedCommitStrategy,543,0,10,0,115,0,10,0,5,0
+"java (Mar 6, 2018 12:13:15 PM)/pretested-integration/src/main/java",org.jenkinsci.plugins.pretestedintegration.scm.git,PretestedIntegrationAsGitPluginExt,115,245,5,11,18,39,8,9,3,6
+"java (Mar 6, 2018 12:13:15 PM)/pretested-integration/src/main/java",org.jenkinsci.plugins.pretestedintegration.scm.git,SquashCommitStrategy.DescriptorImpl,11,0,0,0,5,0,3,0,3,0
+"java (Mar 6, 2018 12:13:15 PM)/pretested-integration/src/main/java",org.jenkinsci.plugins.pretestedintegration.scm.git,SquashCommitStrategy,186,298,4,6,40,64,5,5,1,4
+"java (Mar 6, 2018 12:13:15 PM)/pretested-integration/src/main/java",org.jenkinsci.plugins.pretestedintegration.scm.git,RepositoryListenerAwareCallback,0,3,0,0,0,1,0,1,0,1
+"java (Mar 6, 2018 12:13:15 PM)/pretested-integration/src/main/java",org.jenkinsci.plugins.pretestedintegration.scm.git,GitIntegrationStrategy,141,121,6,6,36,26,5,7,0,6
+"java (Mar 6, 2018 12:13:15 PM)/pretested-integration/src/main/java",org.jenkinsci.plugins.pretestedintegration.scm.git,PretestedIntegrationAsGitPluginExt.DescriptorImpl,30,0,2,0,7,0,5,0,4,0
+"java (Mar 6, 2018 12:13:15 PM)/pretested-integration/src/main/java",org.jenkinsci.plugins.pretestedintegration.scm.git,GitMessages,12,0,0,0,2,0,2,0,2,0
+"java (Mar 6, 2018 12:13:15 PM)/pretested-integration/src/main/java",org.jenkinsci.plugins.pretestedintegration.scm.git,PretestedIntegrationGitUtils,226,37,22,0,36,6,15,3,4,3
