@@ -1,0 +1,61 @@
+entity,main-dev,added,total-added,ownership
+pretested-integration-plugin/src/main/java/org/jenkinsci/plugins/pretestedintegration/scm/git/GetCommitCountFromBranchCallback.java,Active Developers,75,75,1.0
+pretested-integration-plugin/src/test/java/org/jenkinsci/plugins/pretestedintegration/integration/scm/git/GetCommitCountFromBranchCallbackIT.java,Active Developers,79,79,1.0
+pretested-integration-plugin/src/test/java/org/jenkinsci/plugins/pretestedintegration/integration/scm/git/AccumulatedCommitMessageIT.java,Active Developers,1641,1641,1.0
+pretested-integration-plugin/src/main/java/org/jenkinsci/plugins/pretestedintegration/IntegrationStrategyDescriptor.java,Active Developers,29,29,1.0
+pretested-integration-plugin/src/test/java/org/jenkinsci/plugins/pretestedintegration/integration/scm/git/MatrixProjectCompatibilityTestIT.java,unknown,70,76,0.92105263
+pretested-integration-plugin/src/main/java/org/jenkinsci/plugins/pretestedintegration/exceptions/CommitFailedException.java,Active Developers,40,40,1.0
+pretested-integration-plugin/src/test/java/org/jenkinsci/plugins/pretestedintegration/integration/scm/git/TestCommit.java,Active Developers,16,16,1.0
+pretested-integration-plugin/src/test/java/org/jenkinsci/plugins/pretestedintegration/integration/scm/git/TestUtilsFactory.java,Active Developers,540,584,0.9246575
+pretested-integration-plugin/src/test/java/org/jenkinsci/plugins/pretestedintegration/integration/scm/git/GitSubmoduleInteractionIT.java,Active Developers,206,206,1.0
+pretested-integration-plugin/src/main/java/org/jenkinsci/plugins/pretestedintegration/exceptions/BranchDeletionFailedException.java,Active Developers,33,33,1.0
+pretested-integration-plugin/src/test/java/org/jenkinsci/plugins/pretestedintegration/unit/DummySCM.java,Active Developers,112,112,1.0
+pretested-integration-plugin/src/main/java/org/jenkinsci/plugins/pretestedintegration/PretestedIntegrationJobDslExtension.java,Active Developers,118,118,1.0
+pretested-integration-plugin/src/main/java/org/jenkinsci/plugins/pretestedintegration/scm/git/RepositoryListenerAwareCallback.java,Active Developers,28,28,1.0
+pretested-integration-plugin/src/main/java/org/jenkinsci/plugins/pretestedintegration/scm/git/PretestTriggerCommitAction.java,Active Developers,74,74,1.0
+pretested-integration-plugin/ci/seed.groovy,Active Developers,110,110,1.0
+pretested-integration-plugin/src/main/java/org/jenkinsci/plugins/pretestedintegration/scm/git/IntegrationStrategyAsGitPluginExt.java,Active Developers,80,80,1.0
+pretested-integration-plugin/src/main/java/org/jenkinsci/plugins/pretestedintegration/scm/git/GetAllCommitsFromBranchCallback.java,Active Developers,177,177,1.0
+pretested-integration-plugin/src/test/java/org/jenkinsci/plugins/pretestedintegration/integration/scm/git/CommitMessagesWithSpecialCharsIT.java,Active Developers,802,802,1.0
+pretested-integration-plugin/src/test/java/org/jenkinsci/plugins/pretestedintegration/integration/scm/git/PipAsGitExtensionIT.java,Active Developers,159,159,1.0
+pretested-integration-plugin/src/test/java/org/jenkinsci/plugins/pretestedintegration/integration/scm/git/BuildResultValidator.java,unknown,86,122,0.704918
+pretested-integration-plugin/src/test/java/org/jenkinsci/plugins/pretestedintegration/integration/scm/git/UniqueBranchGenerator.java,unknown,52,60,0.8666667
+pretested-integration-plugin/src/test/java/org/jenkinsci/plugins/pretestedintegration/integration/scm/git/TwoBranchHeadsIT.java,Active Developers,435,435,1.0
+pretested-integration-plugin/src/main/java/org/jenkinsci/plugins/pretestedintegration/PretestedIntegrationPostCheckout.java,Active Developers,948,948,1.0
+pretested-integration-plugin/src/test/java/org/jenkinsci/plugins/pretestedintegration/unit/GitIntegrationStrategyTest.java,Active Developers,56,56,1.0
+pretested-integration-plugin/src/test/java/org/jenkinsci/plugins/pretestedintegration/integration/scm/git/EnvVarsIT.java,Active Developers,134,134,1.0
+pretested-integration-plugin/src/main/java/org/jenkinsci/plugins/pretestedintegration/scm/git/PretestedIntegrationAsGitPluginExt.java,Active Developers,484,484,1.0
+pretested-integration-plugin/check_for_changelog.rb,Active Developers,120,120,1.0
+pretested-integration-plugin/src/test/java/org/jenkinsci/plugins/pretestedintegration/integration/scm/git/NothingToDoFailsBuild.java,Active Developers,53,53,1.0
+pretested-integration-plugin/src/test/java/org/jenkinsci/plugins/pretestedintegration/unit/DummyBridge.java,Active Developers,24,24,1.0
+pretested-integration-plugin/src/test/java/org/jenkinsci/plugins/pretestedintegration/integration/scm/git/GeneralBehaviourIT.java,unknown,134,193,0.69430053
+pretested-integration-plugin/src/test/java/org/jenkinsci/plugins/pretestedintegration/integration/scm/git/SquashCommitStrategyIT.java,Active Developers,801,801,1.0
+pretested-integration-plugin/src/main/java/org/jenkinsci/plugins/pretestedintegration/scm/git/SquashCommitStrategy.java,Active Developers,843,843,1.0
+pretested-integration-plugin/src/test/java/org/jenkinsci/plugins/pretestedintegration/integration/scm/git/JENKINS_24754_IT.java,Active Developers,218,218,1.0
+pretested-integration-plugin/src/main/java/org/jenkinsci/plugins/pretestedintegration/scm/git/AccumulatedCommitStrategy.java,Active Developers,766,766,1.0
+pretested-integration-plugin/src/test/java/org/jenkinsci/plugins/pretestedintegration/integration/scm/git/StaticGitRepositoryTestBase.java,Active Developers,175,175,1.0
+pretested-integration-plugin/src/main/java/org/jenkinsci/plugins/pretestedintegration/exceptions/IntegrationFailedException.java,Active Developers,47,47,1.0
+pretested-integration-plugin/src/main/java/org/jenkinsci/plugins/pretestedintegration/exceptions/IntegrationUnknownFailureException.java,Active Developers,82,82,1.0
+pretested-integration-plugin/src/main/java/org/jenkinsci/plugins/pretestedintegration/exceptions/UnsupportedConfigurationException.java,Active Developers,29,29,1.0
+pretested-integration-plugin/src/test/java/org/jenkinsci/plugins/pretestedintegration/unit/AbstractSCMBridgeTest.java,Active Developers,111,111,1.0
+pretested-integration-plugin/src/test/java/org/jenkinsci/plugins/pretestedintegration/integration/scm/git/CustomIntegrationBranchIT.java,Active Developers,334,334,1.0
+pretested-integration-plugin/src/main/java/org/jenkinsci/plugins/pretestedintegration/scm/git/FindCommitAuthorCallback.java,Active Developers,59,59,1.0
+pretested-integration-plugin/src/main/java/org/jenkinsci/plugins/pretestedintegration/exceptions/EstablishingWorkspaceFailedException.java,Active Developers,17,17,1.0
+pretested-integration-plugin/src/main/java/org/jenkinsci/plugins/pretestedintegration/IntegrationStrategy.java,Active Developers,62,62,1.0
+pretested-integration-plugin/src/test/java/org/jenkinsci/plugins/pretestedintegration/integration/scm/git/ChangelessBranchFailsBuildIT.java,Active Developers,72,72,1.0
+pretested-integration-plugin/src/test/java/org/jenkinsci/plugins/pretestedintegration/unit/DummyIntegrationStrategy.java,unknown,15,18,0.8333333
+pretested-integration-plugin/src/test/java/org/jenkinsci/plugins/pretestedintegration/integration/scm/git/AccumulatedCommitStrategyIT.java,Active Developers,468,468,1.0
+pretested-integration-plugin/src/test/java/org/jenkinsci/plugins/pretestedintegration/integration/scm/git/IntegrationBranchNameRestrictions_IT.java,Active Developers,177,177,1.0
+pretested-integration-plugin/src/test/resources/commitMessagesWithDoubleQuotesSingleQuotesMade_windows.bat,Active Developers,61,61,1.0
+pretested-integration-plugin/src/main/java/org/jenkinsci/plugins/pretestedintegration/SCMBridgeDescriptor.java,Active Developers,47,47,1.0
+pretested-integration-plugin/src/main/java/org/jenkinsci/plugins/pretestedintegration/scm/git/GitBridge.java,Active Developers,1801,1801,1.0
+pretested-integration-plugin/src/main/java/org/jenkinsci/plugins/pretestedintegration/exceptions/NothingToDoException.java,Active Developers,13,13,1.0
+pretested-integration-plugin/src/test/java/org/jenkinsci/plugins/pretestedintegration/integration/scm/git/UseAuthorOfLastCommitIT.java,Active Developers,182,182,1.0
+pretested-integration-plugin/src/main/java/org/jenkinsci/plugins/pretestedintegration/AbstractSCMBridge.java,Active Developers,719,719,1.0
+pretested-integration-plugin/src/main/java/org/jenkinsci/plugins/pretestedintegration/scm/git/PretestedIntegrationGitUtils.java,Active Developers,300,300,1.0
+pretested-integration-plugin/src/test/java/org/jenkinsci/plugins/pretestedintegration/credentials/CredentialsTest.java,Active Developers,205,205,1.0
+pretested-integration-plugin/src/test/java/org/jenkinsci/plugins/pretestedintegration/integration/scm/git/FastForwardSingleCommitsIT.java,Active Developers,175,175,1.0
+pretested-integration-plugin/src/main/java/org/jenkinsci/plugins/pretestedintegration/scm/git/FindCommitMessageCallback.java,Active Developers,26,26,1.0
+pretested-integration-plugin/src/main/java/org/jenkinsci/plugins/pretestedintegration/scm/git/GitIntegrationStrategy.java,Active Developers,392,392,1.0
+pretested-integration-plugin/src/main/java/org/jenkinsci/plugins/pretestedintegration/scm/git/GitMessages.java,Active Developers,40,40,1.0
+pretested-integration-plugin/src/test/resources/commitMessagesWithDoubleQuotes_windows.bat,Active Developers,61,61,1.0

@@ -1,0 +1,61 @@
+entity,main-dev,added,total-added,ownership
+pretested-integration-plugin/src/main/java/org/jenkinsci/plugins/pretestedintegration/scm/git/GetCommitCountFromBranchCallback.java,Thierry Lacour,63,75,0.84
+pretested-integration-plugin/src/test/java/org/jenkinsci/plugins/pretestedintegration/integration/scm/git/GetCommitCountFromBranchCallbackIT.java,Thierry Lacour,61,79,0.77
+pretested-integration-plugin/src/test/java/org/jenkinsci/plugins/pretestedintegration/integration/scm/git/AccumulatedCommitMessageIT.java,Bue Petersen,1578,1641,0.96
+pretested-integration-plugin/src/main/java/org/jenkinsci/plugins/pretestedintegration/IntegrationStrategyDescriptor.java,Thierry Lacour,13,29,0.45
+pretested-integration-plugin/src/test/java/org/jenkinsci/plugins/pretestedintegration/integration/scm/git/MatrixProjectCompatibilityTestIT.java,Simon Grønborg,5,6,0.8300000000000001
+pretested-integration-plugin/src/main/java/org/jenkinsci/plugins/pretestedintegration/exceptions/CommitFailedException.java,Simon Groenborg,20,40,0.5
+pretested-integration-plugin/src/test/java/org/jenkinsci/plugins/pretestedintegration/integration/scm/git/TestCommit.java,Thierry Lacour,16,16,1.0
+pretested-integration-plugin/src/test/java/org/jenkinsci/plugins/pretestedintegration/integration/scm/git/TestUtilsFactory.java,Bue Petersen,295,540,0.55
+pretested-integration-plugin/src/test/java/org/jenkinsci/plugins/pretestedintegration/integration/scm/git/GitSubmoduleInteractionIT.java,Bue Petersen,206,206,1.0
+pretested-integration-plugin/src/main/java/org/jenkinsci/plugins/pretestedintegration/exceptions/BranchDeletionFailedException.java,Thierry Lacour,33,33,1.0
+pretested-integration-plugin/src/test/java/org/jenkinsci/plugins/pretestedintegration/unit/DummySCM.java,Ronni Elken Lindsgaard,77,112,0.6900000000000001
+pretested-integration-plugin/src/main/java/org/jenkinsci/plugins/pretestedintegration/PretestedIntegrationJobDslExtension.java,Thierry Lacour,104,118,0.88
+pretested-integration-plugin/src/main/java/org/jenkinsci/plugins/pretestedintegration/scm/git/RepositoryListenerAwareCallback.java,Thierry Lacour,15,28,0.54
+pretested-integration-plugin/src/main/java/org/jenkinsci/plugins/pretestedintegration/scm/git/PretestTriggerCommitAction.java,Claus Schneider(Praqma),37,74,0.5
+pretested-integration-plugin/ci/seed.groovy,Praqma Service User,110,110,1.0
+pretested-integration-plugin/src/main/java/org/jenkinsci/plugins/pretestedintegration/scm/git/IntegrationStrategyAsGitPluginExt.java,Claus Schneider(Praqma),40,80,0.5
+pretested-integration-plugin/src/main/java/org/jenkinsci/plugins/pretestedintegration/scm/git/GetAllCommitsFromBranchCallback.java,Bue Petersen,76,177,0.43
+pretested-integration-plugin/src/test/java/org/jenkinsci/plugins/pretestedintegration/integration/scm/git/CommitMessagesWithSpecialCharsIT.java,Bue Petersen,765,802,0.9500000000000001
+pretested-integration-plugin/src/test/java/org/jenkinsci/plugins/pretestedintegration/integration/scm/git/PipAsGitExtensionIT.java,Simon Groenborg,159,159,1.0
+pretested-integration-plugin/src/test/java/org/jenkinsci/plugins/pretestedintegration/integration/scm/git/BuildResultValidator.java,Bue Petersen,32,36,0.89
+pretested-integration-plugin/src/test/java/org/jenkinsci/plugins/pretestedintegration/integration/scm/git/UniqueBranchGenerator.java,Thierry Lacour,8,8,1.0
+pretested-integration-plugin/src/test/java/org/jenkinsci/plugins/pretestedintegration/integration/scm/git/TwoBranchHeadsIT.java,Andrius Ordojan,345,435,0.79
+pretested-integration-plugin/src/main/java/org/jenkinsci/plugins/pretestedintegration/PretestedIntegrationPostCheckout.java,Andreas Frisch,255,948,0.27
+pretested-integration-plugin/src/test/java/org/jenkinsci/plugins/pretestedintegration/unit/GitIntegrationStrategyTest.java,Thierry Lacour,34,56,0.61
+pretested-integration-plugin/src/test/java/org/jenkinsci/plugins/pretestedintegration/integration/scm/git/EnvVarsIT.java,Thierry Lacour,134,134,1.0
+pretested-integration-plugin/src/main/java/org/jenkinsci/plugins/pretestedintegration/scm/git/PretestedIntegrationAsGitPluginExt.java,Simon Groenborg,261,484,0.54
+pretested-integration-plugin/check_for_changelog.rb,Bue Petersen,120,120,1.0
+pretested-integration-plugin/src/test/java/org/jenkinsci/plugins/pretestedintegration/integration/scm/git/NothingToDoFailsBuild.java,Thierry Lacour,53,53,1.0
+pretested-integration-plugin/src/test/java/org/jenkinsci/plugins/pretestedintegration/unit/DummyBridge.java,Thierry Lacour,6,24,0.25
+pretested-integration-plugin/src/test/java/org/jenkinsci/plugins/pretestedintegration/integration/scm/git/GeneralBehaviourIT.java,Thierry Lacour,30,59,0.51
+pretested-integration-plugin/src/test/java/org/jenkinsci/plugins/pretestedintegration/integration/scm/git/SquashCommitStrategyIT.java,Andrius Ordojan,736,801,0.92
+pretested-integration-plugin/src/main/java/org/jenkinsci/plugins/pretestedintegration/scm/git/SquashCommitStrategy.java,Thierry Lacour,191,843,0.23
+pretested-integration-plugin/src/test/java/org/jenkinsci/plugins/pretestedintegration/integration/scm/git/JENKINS_24754_IT.java,Bue Petersen,131,218,0.6
+pretested-integration-plugin/src/main/java/org/jenkinsci/plugins/pretestedintegration/scm/git/AccumulatedCommitStrategy.java,Simon Groenborg,179,766,0.23
+pretested-integration-plugin/src/test/java/org/jenkinsci/plugins/pretestedintegration/integration/scm/git/StaticGitRepositoryTestBase.java,Bue Petersen,160,175,0.91
+pretested-integration-plugin/src/main/java/org/jenkinsci/plugins/pretestedintegration/exceptions/IntegrationFailedException.java,Thierry Lacour,47,47,1.0
+pretested-integration-plugin/src/main/java/org/jenkinsci/plugins/pretestedintegration/exceptions/IntegrationUnknownFailureException.java,Claus Schneider(Praqma),41,82,0.5
+pretested-integration-plugin/src/main/java/org/jenkinsci/plugins/pretestedintegration/exceptions/UnsupportedConfigurationException.java,Thierry Lacour,29,29,1.0
+pretested-integration-plugin/src/test/java/org/jenkinsci/plugins/pretestedintegration/unit/AbstractSCMBridgeTest.java,Ronni Elken Lindsgaard,76,111,0.68
+pretested-integration-plugin/src/test/java/org/jenkinsci/plugins/pretestedintegration/integration/scm/git/CustomIntegrationBranchIT.java,Bue Petersen,330,334,0.99
+pretested-integration-plugin/src/main/java/org/jenkinsci/plugins/pretestedintegration/scm/git/FindCommitAuthorCallback.java,Bue Petersen,37,59,0.63
+pretested-integration-plugin/src/main/java/org/jenkinsci/plugins/pretestedintegration/exceptions/EstablishingWorkspaceFailedException.java,Thierry Lacour,17,17,1.0
+pretested-integration-plugin/src/main/java/org/jenkinsci/plugins/pretestedintegration/IntegrationStrategy.java,Thierry Lacour,25,62,0.4
+pretested-integration-plugin/src/test/java/org/jenkinsci/plugins/pretestedintegration/integration/scm/git/ChangelessBranchFailsBuildIT.java,Thierry Lacour,62,72,0.86
+pretested-integration-plugin/src/test/java/org/jenkinsci/plugins/pretestedintegration/unit/DummyIntegrationStrategy.java,Thierry Lacour,3,3,1.0
+pretested-integration-plugin/src/test/java/org/jenkinsci/plugins/pretestedintegration/integration/scm/git/AccumulatedCommitStrategyIT.java,Andrius Ordojan,452,468,0.97
+pretested-integration-plugin/src/test/java/org/jenkinsci/plugins/pretestedintegration/integration/scm/git/IntegrationBranchNameRestrictions_IT.java,Thierry Lacour,171,177,0.97
+pretested-integration-plugin/src/test/resources/commitMessagesWithDoubleQuotesSingleQuotesMade_windows.bat,Bue Petersen,61,61,1.0
+pretested-integration-plugin/src/main/java/org/jenkinsci/plugins/pretestedintegration/SCMBridgeDescriptor.java,Ronni Elken Lindsgaard,32,47,0.68
+pretested-integration-plugin/src/main/java/org/jenkinsci/plugins/pretestedintegration/scm/git/GitBridge.java,Thierry Lacour,572,1801,0.32
+pretested-integration-plugin/src/main/java/org/jenkinsci/plugins/pretestedintegration/exceptions/NothingToDoException.java,Thierry Lacour,13,13,1.0
+pretested-integration-plugin/src/test/java/org/jenkinsci/plugins/pretestedintegration/integration/scm/git/UseAuthorOfLastCommitIT.java,Bue Petersen,180,182,0.99
+pretested-integration-plugin/src/main/java/org/jenkinsci/plugins/pretestedintegration/AbstractSCMBridge.java,Ronni Elken Lindsgaard,202,719,0.28
+pretested-integration-plugin/src/main/java/org/jenkinsci/plugins/pretestedintegration/scm/git/PretestedIntegrationGitUtils.java,Claus Schneider(Praqma),144,300,0.48
+pretested-integration-plugin/src/test/java/org/jenkinsci/plugins/pretestedintegration/credentials/CredentialsTest.java,Thierry Lacour,205,205,1.0
+pretested-integration-plugin/src/test/java/org/jenkinsci/plugins/pretestedintegration/integration/scm/git/FastForwardSingleCommitsIT.java,Thierry Lacour,157,175,0.9
+pretested-integration-plugin/src/main/java/org/jenkinsci/plugins/pretestedintegration/scm/git/FindCommitMessageCallback.java,Thierry Lacour,14,26,0.54
+pretested-integration-plugin/src/main/java/org/jenkinsci/plugins/pretestedintegration/scm/git/GitIntegrationStrategy.java,Thierry Lacour,208,392,0.53
+pretested-integration-plugin/src/main/java/org/jenkinsci/plugins/pretestedintegration/scm/git/GitMessages.java,Bue Petersen,28,40,0.7000000000000001
+pretested-integration-plugin/src/test/resources/commitMessagesWithDoubleQuotes_windows.bat,Bue Petersen,61,61,1.0
