@@ -1,0 +1,1 @@
+{"version":1,"aspects":[{"id":"author","name":"Authors","maxValue":0},{"id":"team","name":"Teams","maxValue":0},{"id":"loss","name":"Knowledge Loss","maxValue":0},{"id":"fragmentation","name":"Coordination Needs","maxValue":1.0},{"id":"sprawl","name":"Technical Sprawl","maxValue":0}],"name":"System","path":[],"children":null}

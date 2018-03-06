@@ -1,0 +1,8 @@
+name,classification,loc,revisions,nauthors,soc,trendwarning
+pretested-integration-plugin/src/main/java/org/jenkinsci/plugins/pretestedintegration/PretestedIntegrationPostCheckout.java,0,137,86,11,255,None
+pretested-integration-plugin/src/main/java/org/jenkinsci/plugins/pretestedintegration/scm/git/GitBridge.java,0,321,58,7,329,None
+pretested-integration-plugin/src/main/java/org/jenkinsci/plugins/pretestedintegration/AbstractSCMBridge.java,0,99,57,6,278,None
+pretested-integration-plugin/src/main/java/org/jenkinsci/plugins/pretestedintegration/scm/git/SquashCommitStrategy.java,0,185,51,8,298,None
+pretested-integration-plugin/src/main/java/org/jenkinsci/plugins/pretestedintegration/scm/git/AccumulatedCommitStrategy.java,0,193,44,8,295,None
+pretested-integration-plugin/src/test/java/org/jenkinsci/plugins/pretestedintegration/integration/scm/git/TestUtilsFactory.java,1,584,35,6,237,None
+pretested-integration-plugin/src/test/java/org/jenkinsci/plugins/pretestedintegration/integration/scm/git/AccumulatedCommitMessageIT.java,1,559,6,2,60,None

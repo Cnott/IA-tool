@@ -1,0 +1,1 @@
+{"version":1,"aspects":[{"id":"hotspots","name":"Hotspots","maxValue":1},{"id":"codeAge","name":"Code Age","maxValue":1},{"id":"codeChurn","name":"Code Churn","maxValue":1}],"name":"System","path":[],"children":null}

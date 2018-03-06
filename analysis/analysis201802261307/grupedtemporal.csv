@@ -1,0 +1,2 @@
+entity,coupled,degree,average-revs
+pretested-integration-plugin/src/main/java/org/jenkinsci/plugins/pretestedintegration/scm/git/AccumulatedCommitStrategy.java,pretested-integration-plugin/src/main/java/org/jenkinsci/plugins/pretestedintegration/scm/git/SquashCommitStrategy.java,77,16
