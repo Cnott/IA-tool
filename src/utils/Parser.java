@@ -11,11 +11,13 @@ public class Parser {
 	
 	public static List<String> executeParse(String selectedFiles) throws FileNotFoundException{
 		String fileName=Paths.get(".").toAbsolutePath().normalize().toString();
-		fileName+=File.separator+"DataFiles"+File.separator+"coupling.csv";
+		fileName+=File.separator+"DataFiles"+File.separator+""
+				+"coupling.csv";
 		File selectedFile = new File(fileName);
 		System.out.println(selectedFile.getAbsolutePath());
 
 		Scanner scanner = new Scanner(selectedFile);
+		System.out.println( selectedFiles+","+ selectedFiles+ ",0");
 		while (scanner.hasNext()) {
 			List<String> line = parseCSCoupling(selectedFiles, CSVUtils.parseLine(scanner.nextLine()));
 			if (line != null) {
