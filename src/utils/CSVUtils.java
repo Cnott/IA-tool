@@ -61,30 +61,23 @@ public class CSVUtils {
                     } else {
                         curVal.append(ch);
                     }
-
                 }
             } else {
                 if (ch == customQuote) {
-
                     inQuotes = true;
-
                     //Fixed : allow "" in empty quote enclosed
                     if (chars[0] != '"' && customQuote == '\"') {
                         curVal.append('"');
                     }
-
                     //double quotes in column will hit this!
                     if (startCollectChar) {
                         curVal.append('"');
                     }
 
                 } else if (ch == separators) {
-
                     result.add(curVal.toString());
-
                     curVal = new StringBuffer();
                     startCollectChar = false;
-
                 } else if (ch == '\r') {
                     //ignore LF characters
                     continue;
