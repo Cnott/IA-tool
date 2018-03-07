@@ -2,6 +2,7 @@ package utils;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
@@ -11,7 +12,7 @@ import data.FileObject;
 
 public class Parser {
 
-	public static List<String> executeParse(List<String> searchedFiles) throws FileNotFoundException {
+	public static List<String> executeParse(List<String> searchedFiles) throws IOException {
 		ArrayList<FileObject> coupledList = new ArrayList<FileObject>();
 		for (String searchFile : searchedFiles) {
 			parseCSCoupling(searchFile, coupledList);
@@ -23,6 +24,7 @@ public class Parser {
 				System.out.println(f.toString());
 			}
 		}
+		CSVUtils.write(coupledList);
 		return null;
 	}
 
