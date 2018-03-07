@@ -15,6 +15,8 @@ public class Parser {
 		ArrayList<FileObject> coupledList=new ArrayList<FileObject>();
 		parseCSCoupling(searchedFiles, coupledList);
 		for(FileObject f : coupledList) {
+			String searchedFile=f.getCoupledFileName().split("\\.")[0];
+			parseCSCycloComp(searchedFile, f);
 			f.print();
 		}
 		
@@ -30,7 +32,6 @@ public class Parser {
 		fileName+=File.separator+"DataFiles"+File.separator+""
 				+"coupling.csv";
 		File selectedFile = new File(fileName);
-		System.out.println(selectedFile.getAbsolutePath());
 		Scanner scanner = new Scanner(selectedFile);
 		//reading each line of the csv file one line at a time
 		while (scanner.hasNext()) {
@@ -60,5 +61,21 @@ public class Parser {
 			}
 		}
 		scanner.close();
+	}
+	
+	public static void parseCSCycloComp(String fileName,FileObject obj) throws FileNotFoundException {
+		String filePath=Paths.get(".").toAbsolutePath().normalize().toString();
+		filePath+=File.separator+"DataFiles"+File.separator+""
+				+fileName+".csv";
+		File selectedFile = new File(filePath);
+		Scanner scanner = new Scanner(selectedFile);
+		int sum=0;
+		scanner.nextLine();
+		while (scanner.hasNext()) {
+			List<String> line =CSVUtils.parseLine(scanner.nextLine());
+			sum+=Integer.valueOf(line.get(3));
+		}
+		scanner.close();
+		obj.setCycloComplex(String.valueOf(sum));
 	}
 }
