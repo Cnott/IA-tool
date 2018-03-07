@@ -9,6 +9,7 @@ import javax.swing.JFileChooser;
 import javax.swing.filechooser.FileSystemView;
 
 import utils.CSVUtils;
+import utils.Parser;
 
 public class CplxParsing {
 
@@ -29,13 +30,14 @@ public class CplxParsing {
 
 			Scanner scanner = new Scanner(selectedFile);
 			while (scanner.hasNext()) {
-				List<String> line = CSVUtils.parseLine(scanner.nextLine());
-
-				for (String s : line) {
-					System.out.print(s);
-					System.out.print(" , ");
+				List<String> line = Parser.parseCSCoupling("GitBridge.java", CSVUtils.parseLine(scanner.nextLine()));
+				if (line != null) {
+					for (String s : line) {
+						System.out.print(s);
+						System.out.print(",");
+					}
+					System.out.println();
 				}
-				System.out.println();
 			}
 			scanner.close();
 		}
