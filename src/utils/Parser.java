@@ -1,16 +1,39 @@
 package utils;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class Parser {
 	
-	public static List<String> executeParse(List<String> fileNames){
+	public static List<String> executeParse(String selectedFiles) throws FileNotFoundException{
+		String fileName=Paths.get(".").toAbsolutePath().normalize().toString();
+		fileName+="\\DataFiles\\coupling.csv";
+		File selectedFile = new File(fileName);
+		System.out.println(selectedFile.getAbsolutePath());
+
+		Scanner scanner = new Scanner(selectedFile);
+		while (scanner.hasNext()) {
+			List<String> line = parseCSCoupling(selectedFiles, CSVUtils.parseLine(scanner.nextLine()));
+			if (line != null) {
+				for (String s : line) {
+					System.out.print(s);
+					System.out.print(",");
+				}
+				System.out.println();
+			}
+		}
+		scanner.close();
 		
-		return fileNames;
+		
+		return null;
 	}
 	
-	public static List<String> parseCSCoupling(String fileName, List<String> input){
+	public static List<String> parseCSCoupling(String fileName,List<String> input){
+		
 		List<String> list=new ArrayList<String>();
 		String name[]=input.get(0).split("/");
 		if(name[name.length-1].matches(fileName)) {
