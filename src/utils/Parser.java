@@ -7,50 +7,58 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+import data.FileObject;
+
 public class Parser {
 	
-	public static List<String> executeParse(String selectedFiles) throws FileNotFoundException{
+	public static List<String> executeParse(String searchedFiles) throws FileNotFoundException{
+		ArrayList<FileObject> coupledList=new ArrayList<FileObject>();
+		parseCSCoupling(searchedFiles, coupledList);
+		for(FileObject f : coupledList) {
+			f.print();
+		}
+		
+		return null;
+	}
+	
+	public static void  parseCSCoupling(String searchedFile,List<FileObject> coupledList) throws FileNotFoundException{
+		//Adding the search object to the list since it's connected to itself.
+		coupledList.add(new FileObject(searchedFile, searchedFile,"0"));
+		
+		//Fetching from coupling.csv inside DataFiles folder
 		String fileName=Paths.get(".").toAbsolutePath().normalize().toString();
 		fileName+=File.separator+"DataFiles"+File.separator+""
 				+"coupling.csv";
 		File selectedFile = new File(fileName);
 		System.out.println(selectedFile.getAbsolutePath());
-
 		Scanner scanner = new Scanner(selectedFile);
-		System.out.println( selectedFiles+","+ selectedFiles+ ",0");
+		//reading each line of the csv file one line at a time
 		while (scanner.hasNext()) {
-			List<String> line = parseCSCoupling(selectedFiles, CSVUtils.parseLine(scanner.nextLine()));
-			if (line != null) {
-				for (String s : line) {
-					System.out.print(s);
-					System.out.print(",");
-				}
-				System.out.println();
+			List<String> line =CSVUtils.parseLine(scanner.nextLine());
+			String name[]=line.get(0).split("/");
+			String fileToAdd="";
+			String coupledFileToAdd="";
+			String degOfCoup="";
+			//Looking if the searched file matches any entry in the left column
+			if(name[name.length-1].matches(searchedFile)) {
+				fileToAdd=(name[name.length-1]);
+				name=line.get(1).split("/");
+				coupledFileToAdd=(name[name.length-1]);
+				degOfCoup=(line.get(2));
+			}
+			//Looking if the searched file matches any entry in the right column
+			name=line.get(1).split("/");
+			if(name[name.length-1].matches(searchedFile)) {
+				fileToAdd=(name[name.length-1]);
+				name=line.get(0).split("/");
+				coupledFileToAdd=(name[name.length-1]);
+				degOfCoup=(line.get(2));
+			}
+			//If we found a match we add it to the list
+			if(!fileToAdd.matches("")) {
+				coupledList.add(new FileObject(fileToAdd,coupledFileToAdd,degOfCoup));
 			}
 		}
 		scanner.close();
-		
-		
-		return null;
-	}
-	
-	public static List<String> parseCSCoupling(String fileName,List<String> input){
-		
-		List<String> list=new ArrayList<String>();
-		String name[]=input.get(0).split("/");
-		if(name[name.length-1].matches(fileName)) {
-			list.add(name[name.length-1]);
-			name=input.get(1).split("/");
-			list.add(name[name.length-1]);
-			list.add(input.get(2));
-		}
-		name=input.get(1).split("/");
-		if(name[name.length-1].matches(fileName)) {
-			list.add(name[name.length-1]);
-			name=input.get(0).split("/");
-			list.add(name[name.length-1]);
-			list.add(input.get(2));
-		}
-		return list.size() > 0 ? list:null;
 	}
 }
