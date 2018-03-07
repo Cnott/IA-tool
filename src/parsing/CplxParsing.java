@@ -43,4 +43,3 @@ public class CplxParsing {
 		}
 	}
 }
->>>>>>> branch 'master' of git@github.com:Cnott/IA-tool.git
