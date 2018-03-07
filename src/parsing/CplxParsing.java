@@ -1,14 +1,9 @@
 package parsing;
 
-import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.List;
-import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.Arrays;
 
-import javax.swing.JFileChooser;
-import javax.swing.filechooser.FileSystemView;
-
-import utils.CSVUtils;
 import utils.Parser;
 
 public class CplxParsing {
@@ -41,6 +36,8 @@ public class CplxParsing {
 //			}
 //			scanner.close();
 //		}
-		Parser.executeParse("GitBridge.java");
+		ArrayList<String> listToSearch=new ArrayList<String>();
+		listToSearch.add("GitBridge.java");
+		Parser.executeParse(listToSearch);
 	}
 }
