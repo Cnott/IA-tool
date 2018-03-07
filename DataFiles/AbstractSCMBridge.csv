@@ -1,0 +1,16 @@
+module,revisions,code,cc
+getDescriptors,7,7,5
+prepareWorkspace,7,3,2
+all,7,3,1
+getBehaviours,6,7,5
+getDescriptor,6,3,2
+mergeChanges,4,3,2
+deleteIntegratedBranch,3,2,2
+updateBuildDescription,3,2,2
+getRequiredResult,2,3,1
+AbstractSCMBridge,2,3,1
+isApplicable,1,1,2
+handleIntegrationExceptions,0,38,9
+getExpandedIntegrationBranch,0,3,1
+pushToIntegrationBranch,0,2,2
+validateConfiguration,0,2,2

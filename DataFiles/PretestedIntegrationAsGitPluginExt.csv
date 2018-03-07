@@ -1,0 +1,12 @@
+module,revisions,code,cc
+decorateRevisionToBuild,12,70,14
+PretestedIntegrationAsGitPluginExt,6,6,1
+PretestedIntegrationAsGitPluginExt.DescriptorImpl.getDisplayName,5,3,1
+PretestedIntegrationAsGitPluginExt.DescriptorImpl.getDefaultStrategy,5,3,1
+getVersion,3,5,3
+getGitBridge,3,3,1
+getIntegrationBranch,3,3,1
+getGitIntegrationStrategy,2,3,1
+PretestedIntegrationAsGitPluginExt.DescriptorImpl.getIntegrationStrategies,0,7,5
+getRequiredClient,0,3,1
+decorateMergeCommand,0,2,2

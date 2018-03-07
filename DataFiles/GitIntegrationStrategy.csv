@@ -1,0 +1,5 @@
+module,revisions,code,cc
+tryFastForward,7,23,5
+tryRebase,5,51,9
+getPersonIdent,1,6,3
+containsRemoteBranch,0,16,6

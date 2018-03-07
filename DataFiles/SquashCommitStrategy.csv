@@ -1,0 +1,8 @@
+module,revisions,code,cc
+integrate,41,38,6
+doTheIntegration,4,101,18
+integrateAsGitPluginExt,1,29,6
+SquashCommitStrategy.DescriptorImpl.isApplicable,0,3,2
+SquashCommitStrategy.DescriptorImpl.DescriptorImpl,0,3,1
+SquashCommitStrategy.DescriptorImpl.getDisplayName,0,3,1
+SquashCommitStrategy,0,2,1

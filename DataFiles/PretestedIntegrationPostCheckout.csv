@@ -1,0 +1,9 @@
+module,revisions,code,cc
+perform,43,67,20
+PretestedIntegrationPostCheckout.DescriptorImpl.getDisplayName,10,3,1
+getRequiredMonitorService,2,3,1
+isSupported,1,11,5
+printWarningIfUnsupported,1,7,1
+createAggregator,0,8,2
+PretestedIntegrationPostCheckout.DescriptorImpl.isApplicable,0,3,2
+PretestedIntegrationPostCheckout,0,1,1
