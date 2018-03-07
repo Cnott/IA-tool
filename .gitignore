@@ -13,3 +13,5 @@
 .project
 .settings/
 /bin/
+
+/result/*
