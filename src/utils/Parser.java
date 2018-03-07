@@ -17,13 +17,15 @@ public class Parser {
 		for(FileObject f : coupledList) {
 			String searchedFile=f.getCoupledFileName().split("\\.")[0];
 			parseCSCycloComp(searchedFile, f);
+			parseCodeCover(searchedFile, f);
+			parseSOC(f.getCoupledFileName(), f);
 			f.print();
 		}
 		
 		return null;
 	}
 	
-	public static void  parseCSCoupling(String searchedFile,List<FileObject> coupledList) throws FileNotFoundException{
+	private static void  parseCSCoupling(String searchedFile,List<FileObject> coupledList) throws FileNotFoundException{
 		//Adding the search object to the list since it's connected to itself.
 		coupledList.add(new FileObject(searchedFile, searchedFile,"0"));
 		
@@ -63,7 +65,7 @@ public class Parser {
 		scanner.close();
 	}
 	
-	public static void parseCSCycloComp(String fileName,FileObject obj) throws FileNotFoundException {
+	private static void parseCSCycloComp(String fileName,FileObject obj) throws FileNotFoundException {
 		String filePath=Paths.get(".").toAbsolutePath().normalize().toString();
 		filePath+=File.separator+"DataFiles"+File.separator+""
 				+fileName+".csv";
@@ -78,4 +80,49 @@ public class Parser {
 		scanner.close();
 		obj.setCycloComplex(String.valueOf(sum));
 	}
+	
+	private static void parseCodeCover(String fileName, FileObject obj) throws FileNotFoundException {
+		String filePath=Paths.get(".").toAbsolutePath().normalize().toString();
+		filePath+=File.separator+"DataFiles"+File.separator+""
+				+"coverage.csv";
+		File selectedFile = new File(filePath);
+		Scanner scanner = new Scanner(selectedFile);
+		int covSum=0;
+		int totalSum=0;
+		scanner.nextLine();
+		while (scanner.hasNext()) {
+			List<String> line =CSVUtils.parseLine(scanner.nextLine());
+			String file=line.get(2);
+			if(file.contains("\\.")) {
+				file=file.split("\\.")[0];
+			}
+			if(file.matches(fileName)) {
+				covSum+=Integer.valueOf(line.get(4));
+				totalSum+=Integer.valueOf(line.get(4))+Integer.valueOf(line.get(3));
+			}
+		}
+		scanner.close();
+		obj.setCodeCover(String.valueOf(100*covSum/totalSum)+"%");
+	}
+	
+	private static void parseSOC(String fileName, FileObject obj) throws FileNotFoundException {
+		String filePath=Paths.get(".").toAbsolutePath().normalize().toString();
+		filePath+=File.separator+"DataFiles"+File.separator+""
+				+"soc.csv";
+		File selectedFile = new File(filePath);
+		Scanner scanner = new Scanner(selectedFile);
+		int sum=0;
+		//scanner.nextLine();
+		while (scanner.hasNext()) {
+			List<String> line =CSVUtils.parseLine(scanner.nextLine());
+			String file[]=line.get(0).split("\\/");
+			if(file[file.length-1].matches(fileName)) {
+				sum+=Integer.valueOf(line.get(1));
+			}
+		}
+		scanner.close();
+		obj.setSumOfCoupl(String.valueOf(sum));
+	
+	}
+	
 }
