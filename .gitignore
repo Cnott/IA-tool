@@ -1,0 +1,15 @@
+*.class
+/target
+/work
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+*~
+# Eclipse files #
+*.DS_Store
+.project
+.settings/
+/bin/
