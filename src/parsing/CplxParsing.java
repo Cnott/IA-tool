@@ -30,12 +30,14 @@ public class CplxParsing {
 			Scanner scanner = new Scanner(selectedFile);
 			while (scanner.hasNext()) {
 				List<String> line = CSVUtils.parseLine(scanner.nextLine());
-				System.out.println(
-						"Country [id= " + line.get(0) + ", code= " + line.get(1) + " , name=" + line.get(2) + "]");
+
+				for (String s : line) {
+					System.out.print(s);
+					System.out.print(" , ");
+				}
+				System.out.println();
 			}
 			scanner.close();
 		}
-
 	}
-
 }
