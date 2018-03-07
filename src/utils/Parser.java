@@ -20,7 +20,7 @@ public class Parser {
 				parseCSCycloCompAndLongMeth(searchedFile, f);
 				parseCodeCover(searchedFile, f);
 				parseSOC(f.getCoupledFileName(), f);
-				f.print();
+				System.out.println(f.toString());
 			}
 		}
 		return null;

@@ -64,8 +64,8 @@ public class FileObject {
 		this.manyParams = manyParams;
 	}
 	
-	public void print() {
-		System.out.println(fileName + ","+coupledFileName+ ","+degOfCoupling+ 
+	public String toString() {
+		return (fileName + ","+coupledFileName+ ","+degOfCoupling+ 
 				","+cycloComplex + ","+ codeCover+ ","+ sumOfCoupl+ ","+longMethod+ ","+manyParams);
 	}
 }
