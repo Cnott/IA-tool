@@ -1,5 +1,11 @@
 package data;
-
+/**
+ * 
+ * A Class which contains all information about a file
+ * Getters and setters
+ * @author deewe
+ *
+ */
 public class FileObject {
 	private String fileName;
 	private String coupledFileName;
