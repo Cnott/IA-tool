@@ -2,10 +2,17 @@ package utils;
 
 import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.Reader;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
+
+import org.apache.commons.csv.CSVFormat;
+import org.apache.commons.csv.CSVParser;
+import org.apache.commons.csv.CSVRecord;
 
 import data.FileObject;
 
@@ -110,6 +117,15 @@ public class CSVUtils {
 			writer.append(f.toString() + "\n");
 		}
 		writer.close();
+	}
+	
+	public static List<CSVRecord> readResFile() throws IOException {
+		String csvFileInput = Paths.get(".").toAbsolutePath().normalize().toString();
+		csvFileInput += File.separator + "result" + File.separator + "" + "res.csv";
+		Reader in = new FileReader( csvFileInput );
+	    CSVParser parser = new CSVParser( in, CSVFormat.DEFAULT );
+	    List<CSVRecord> list = parser.getRecords();
+	    return list;
 	}
 
 }

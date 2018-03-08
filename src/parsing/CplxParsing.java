@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 
+import utils.CSVUtils;
 import utils.Parser;
 
 public class CplxParsing {
@@ -17,5 +18,6 @@ public class CplxParsing {
 		ArrayList<String> listToSearch=new ArrayList<String>();
 		listToSearch.add("GitBridge.java");
 		Parser.executeParse(listToSearch);
+		CSVUtils.readResFile();
 	}
 }
