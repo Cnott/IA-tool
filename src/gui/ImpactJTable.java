@@ -1,11 +1,13 @@
 package gui;
 
+import java.awt.Color;
+import java.awt.Component;
 import java.io.IOException;
 import java.util.List;
 import java.util.Vector;
 
+import javax.swing.JLabel;
 import javax.swing.JTable;
-import javax.swing.SwingConstants;
 import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.DefaultTableModel;
 
@@ -29,8 +31,22 @@ public class ImpactJTable extends JTable {
 	            model.addRow(rowToAppend);
 	        }
 	        setModel(model);
+	        centerText();
 	        
 	        //Dont know if this is needed
 	        setVisible(true);
+		}
+		
+		private void centerText() {
+			DefaultTableCellRenderer centerRenderer = new DefaultTableCellRenderer();
+			centerRenderer.setHorizontalAlignment( JLabel.CENTER );
+			for(int i = 0; i<getColumnCount(); i++) {
+				getColumnModel().getColumn(i).setCellRenderer(centerRenderer);
+			}
+		}
+		
+		private void fillBackground() {
+		
+		
 		}
 }
