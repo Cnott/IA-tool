@@ -1,7 +1,7 @@
 package gui;
 
 /**
- * All of the code here was taken from https://github.com/aterai/java-swing-tips/tree/master/FileSystemTreeWithCheckBox.
+ * All of the code here was taken from https://github.com/aterai/java-swing-tips.
  * We changed some of the code to make it fit our program
  */
 
