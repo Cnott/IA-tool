@@ -1,13 +1,12 @@
 package gui;
 
-import java.awt.Color;
-import java.awt.Component;
 import java.awt.Dimension;
 import java.io.IOException;
 import java.util.List;
 import java.util.Vector;
 
 import javax.swing.JLabel;
+import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.DefaultTableModel;
@@ -34,7 +33,7 @@ public class ImpactJTable extends JTable {
 	        setModel(model);
 	        centerText();
 	        //Dont know if this is needed
-	        setPreferredSize(new Dimension(1100, 150));
+	        //setPreferredSize(new Dimension(1100, 150));
 	        setVisible(true);
 		}
 		
@@ -48,6 +47,7 @@ public class ImpactJTable extends JTable {
 
 		public void update() throws IOException {
 			// TODO Auto-generated method stub
+			
 			DefaultTableModel model=new DefaultTableModel(COL_NAMES,0);
 			List<CSVRecord> list=CSVUtils.readResFile();
 	        for( CSVRecord row : list ) {
