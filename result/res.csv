@@ -1,9 +1,0 @@
-file,coupledFile,doc,cyclomatic complexity,code coverage,soc,long method,manyParameters
-GitBridge.java,GitBridge.java,100%,98,5%,329,45,0
-GitBridge.java,SquashCommitStrategy.java,42%,35,61%,298,101,0
-GitBridge.java,AccumulatedCommitStrategy.java,41%,6,0%,295,45,0
-GitBridge.java,AbstractSCMBridge.java,40%,39,4%,278,38,0
-GitBridge.java,IntegrationStrategy.java,35%,23,23%,225,51,0
-GitBridge.java,PretestedIntegrationPostCheckout.java,30%,33,9%,255,67,0
-GitBridge.java,PretestedIntegrationAsGitPluginExt.java,30%,31,68%,121,70,0
-GitBridge.java,GitIntegrationStrategy.java,30%,23,46%,186,51,0
