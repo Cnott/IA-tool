@@ -113,7 +113,7 @@ public class CSVUtils {
 	public static void write(ArrayList<FileObject> list) throws IOException {
 		
 		BufferedWriter writer = new BufferedWriter(new FileWriter("result" + File.separator + "res.csv"));
-		writer.append("file,coupledFile,doc,cyclomatic complexity,code coverage,soc,long method,manyParameters\n");
+		//writer.append("file,coupledFile,doc,cyclomatic complexity,code coverage,soc,long method,manyParameters\n");
 		for (FileObject f : list) {
 			writer.append(f.toString() + "\n");
 		}
