@@ -119,6 +119,16 @@ public class CSVUtils {
 		writer.close();
 	}
 	
+	public static void writeIAList(ArrayList<String> list) throws IOException {
+		
+		BufferedWriter writer = new BufferedWriter(new FileWriter("result" + File.separator + "IAset.csv"));
+		for (String f : list) {
+			writer.append(f + "\n");
+		}
+		writer.close();
+	}
+	
+	
 	public static List<CSVRecord> readResFile() throws IOException {
 		String csvFileInput = Paths.get(".").toAbsolutePath().normalize().toString();
 		csvFileInput += File.separator + "result" + File.separator + "" + "res.csv";

@@ -8,12 +8,16 @@ package gui;
 import java.awt.*;
 import java.awt.event.*;
 import java.io.File;
+import java.io.IOException;
 import java.util.*;
 import java.util.List;
 import javax.swing.*;
 import javax.swing.event.*;
 import javax.swing.filechooser.FileSystemView;
 import javax.swing.tree.*;
+
+import utils.BinaryList;
+import utils.CSVUtils;
 
 public final class FileSystemPanel extends JPanel {
 
@@ -31,7 +35,7 @@ public final class FileSystemPanel extends JPanel {
 					.map(file -> new CheckBoxNode(file, Status.DESELECTED)).map(DefaultMutableTreeNode::new)
 					.forEach(node::add);
 		}
-	//	treeModel.addTreeModelListener(new CheckBoxStatusUpdateListener());
+		// treeModel.addTreeModelListener(new CheckBoxStatusUpdateListener());
 
 		JTree tree = new JTree(treeModel) {
 			@Override
@@ -176,6 +180,8 @@ class CheckBoxNodeEditor extends AbstractCellEditor implements TreeCellEditor {
 	private final TriStateCheckBox checkBox = new TriStateCheckBox();
 	private final FileSystemView fileSystemView;
 	private File file;
+	
+	private BinaryList list = new BinaryList();
 
 	protected CheckBoxNodeEditor(FileSystemView fileSystemView) {
 		super();
@@ -183,6 +189,20 @@ class CheckBoxNodeEditor extends AbstractCellEditor implements TreeCellEditor {
 		checkBox.setOpaque(false);
 		checkBox.setFocusable(false);
 		checkBox.addActionListener(e -> stopCellEditing());
+
+		checkBox.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent ae) {
+				list.add(file.toString());
+				try {
+					CSVUtils.writeIAList(list.getList());
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
+		});
+
 		panel.setFocusable(false);
 		panel.setRequestFocusEnabled(false);
 		panel.setOpaque(false);
