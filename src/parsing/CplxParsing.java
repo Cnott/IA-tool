@@ -15,9 +15,5 @@ public class CplxParsing {
 	}
 
 	public static void main(String[] args) throws IOException {
-		ArrayList<String> listToSearch=new ArrayList<String>();
-		listToSearch.add("GitBridge.java");
-		Parser.executeParse(listToSearch);
-		CSVUtils.readResFile();
 	}
 }

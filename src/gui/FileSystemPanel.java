@@ -21,7 +21,7 @@ import utils.CSVUtils;
 
 public final class FileSystemPanel extends JPanel {
 
-	public FileSystemPanel() {
+	public FileSystemPanel(BinaryList impactSet) {
 		super(new BorderLayout());
 
 		FileSystemView fileSystemView = FileSystemView.getFileSystemView();
@@ -44,7 +44,7 @@ public final class FileSystemPanel extends JPanel {
 				setCellEditor(null);
 				super.updateUI();
 				setCellRenderer(new FileTreeCellRenderer(fileSystemView));
-				setCellEditor(new CheckBoxNodeEditor(fileSystemView));
+				setCellEditor(new CheckBoxNodeEditor(fileSystemView,impactSet));
 			}
 		};
 		tree.setRootVisible(false);
@@ -181,25 +181,20 @@ class CheckBoxNodeEditor extends AbstractCellEditor implements TreeCellEditor {
 	private final FileSystemView fileSystemView;
 	private File file;
 	
-	private BinaryList list = new BinaryList();
+	private BinaryList list;
 
-	protected CheckBoxNodeEditor(FileSystemView fileSystemView) {
+	protected CheckBoxNodeEditor(FileSystemView fileSystemView, BinaryList impactSet) {
 		super();
 		this.fileSystemView = fileSystemView;
 		checkBox.setOpaque(false);
 		checkBox.setFocusable(false);
 		checkBox.addActionListener(e -> stopCellEditing());
+		list=impactSet;
 
 		checkBox.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent ae) {
-				list.add(file.toString());
-				try {
-					CSVUtils.writeIAList(list.getList());
-				} catch (IOException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
+				list.add(file.getName());
 			}
 		});
 
