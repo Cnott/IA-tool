@@ -5,6 +5,7 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.io.Reader;
 import java.nio.file.Paths;
 import java.util.ArrayList;
@@ -132,6 +133,13 @@ public class CSVUtils {
 	public static List<CSVRecord> readResFile() throws IOException {
 		String csvFileInput = Paths.get(".").toAbsolutePath().normalize().toString();
 		csvFileInput += File.separator + "result" + File.separator + "" + "res.csv";
+		
+		File f = new File(csvFileInput);
+		if(!(f.exists() && !f.isDirectory())) { 
+			PrintWriter writer = new PrintWriter(csvFileInput, "UTF-8");
+		}
+		
+		
 		Reader in = new FileReader( csvFileInput );
 	    CSVParser parser = new CSVParser( in, CSVFormat.DEFAULT );
 	    List<CSVRecord> list = parser.getRecords();
