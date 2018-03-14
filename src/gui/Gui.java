@@ -15,7 +15,7 @@ import utils.BinaryList;
 public class Gui {
 	
 	public static void main(String[] args) throws IOException {
-		JFrame f=new JFrame("Pick a file or two and get a nice impact analyis and maybe some technical debt :-)");
+		JFrame f=new JFrame("Impact Analysis and parameters indicating Technical Debt");
 		f.setLocation(150,150);
 		f.setPreferredSize(new Dimension(1100,700));
 		ImpactJTable impactTable = new ImpactJTable();
@@ -24,6 +24,7 @@ public class Gui {
 		impactPanel.setBorder(BorderFactory.createEmptyBorder(5, 5, 5, 5));
 		JScrollPane scroll = new JScrollPane(impactTable);
 		scroll.setPreferredSize(new Dimension(1100, 200));
+	//	scroll.set
 		impactPanel.add(scroll);
 		f.add(impactPanel, BorderLayout.SOUTH);
 		

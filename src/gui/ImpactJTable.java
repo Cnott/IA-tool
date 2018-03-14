@@ -39,7 +39,7 @@ public class ImpactJTable extends JTable {
 		
 		private void centerText() {
 			DefaultTableCellRenderer centerRenderer = new DefaultTableCellRenderer();
-			centerRenderer.setHorizontalAlignment( JLabel.CENTER );
+			centerRenderer.setHorizontalAlignment( JLabel.LEFT );
 			for(int i = 0; i<getColumnCount(); i++) {
 				getColumnModel().getColumn(i).setCellRenderer(centerRenderer);
 			}
