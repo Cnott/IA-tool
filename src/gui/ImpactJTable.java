@@ -17,8 +17,8 @@ import utils.CSVUtils;
 
 
 public class ImpactJTable extends JTable {
-		private static final String[] COL_NAMES = { "file","coupledFile","doc","cyclomatic complexity"
-				 									,"code coverage","soc","long method","manyParameters\r\n"};
+		private static final String[] COL_NAMES = { "File","Coupled File","Degree of Coupling","Cyclomatic Complexity"
+				 									,"Test Coverage","Sum of Coupling","Long Method","Many Parameters\r\n"};
 		
 		public ImpactJTable() throws IOException {
 			DefaultTableModel model=new DefaultTableModel(COL_NAMES,0);
