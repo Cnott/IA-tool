@@ -29,7 +29,6 @@ public class DependencyButton extends JButton implements ActionListener {
 		try {
 			Parser.executeParse(listToSearch);
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		try {

@@ -85,7 +85,6 @@ public class ImpactJTable extends JTable {
 
 		ButtonColumn buttonColumn = new ButtonColumn(this, delete, model.getColumnCount() - 1);
 		buttonColumn.setMnemonic(KeyEvent.VK_D);
-		
 
 	}
 
@@ -93,13 +92,20 @@ public class ImpactJTable extends JTable {
 		return model;
 	}
 
-	public ArrayList<String> getDependencyReport() {
+	public ArrayList<String> getDependencyReport(int col) {
 		ArrayList<String> list = new ArrayList<String>();
-		int row = model.getRowCount(); 
-		//int col = model.getColumnCount();
-		System.out.println(row);
-		for(int i = 0; i < row; i++) {
-			list.add(model.getValueAt(i, 0) + "," + model.getValueAt(i, 1));
+		int row = model.getRowCount();
+		// int col = model.getColumnCount();
+		// System.out.println(row);
+		for (int i = 0; i < row; i++) {
+			String string = "";
+			for (int k = 0; k < col; k++) {
+				string += model.getValueAt(i, k);
+				if(k < col -1) {
+					string += ",";
+				}
+			}
+			list.add(string);
 		}
 		return list;
 	}

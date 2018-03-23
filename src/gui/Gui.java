@@ -36,7 +36,7 @@ public class Gui {
 		
 		JPanel buttonPanel = new JPanel();
 		buttonPanel.add(new DependencyButton(impactSet,impactTable), BorderLayout.WEST);
-		buttonPanel.add(new PrintReportButton(impactTable), BorderLayout.EAST);
+		buttonPanel.add(new PrintReportButton(f, impactTable), BorderLayout.EAST);
 		//leftTopPanel.add(new DependencyButton(impactSet,impactTable));
 		//leftTopPanel.add(new DependencyButton(impactSet,impactTable));
 		leftTopPanel.add(buttonPanel);
