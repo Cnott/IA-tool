@@ -3,6 +3,7 @@ package gui;
 import java.awt.event.ActionEvent;
 import java.awt.event.KeyEvent;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Vector;
 
@@ -62,8 +63,6 @@ public class ImpactJTable extends JTable {
 	}
 
 	public void update() throws IOException {
-		// TODO Auto-generated method stub
-		System.out.println("hej");
 		model = new DefaultTableModel(COL_NAMES, 0);
 		List<CSVRecord> list = CSVUtils.readResFile();
 		for (CSVRecord row : list) {
@@ -92,6 +91,17 @@ public class ImpactJTable extends JTable {
 
 	public DefaultTableModel getModel() {
 		return model;
+	}
+
+	public ArrayList<String> getDependencyReport() {
+		ArrayList<String> list = new ArrayList<String>();
+		int row = model.getRowCount(); 
+		//int col = model.getColumnCount();
+		System.out.println(row);
+		for(int i = 0; i < row; i++) {
+			list.add(model.getValueAt(i, 0) + "," + model.getValueAt(i, 1));
+		}
+		return list;
 	}
 
 }

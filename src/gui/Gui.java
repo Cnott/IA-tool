@@ -33,7 +33,13 @@ public class Gui {
 		JPanel leftTopPanel=new JPanel();
 		leftTopPanel.setLayout(new BoxLayout(leftTopPanel,BoxLayout.Y_AXIS));
 		leftTopPanel.add(new FileSystemPanel(impactSet),BorderLayout.CENTER);
-		leftTopPanel.add(new DependencyButton(impactSet,impactTable));
+		
+		JPanel buttonPanel = new JPanel();
+		buttonPanel.add(new DependencyButton(impactSet,impactTable), BorderLayout.WEST);
+		buttonPanel.add(new PrintReportButton(impactTable), BorderLayout.EAST);
+		//leftTopPanel.add(new DependencyButton(impactSet,impactTable));
+		//leftTopPanel.add(new DependencyButton(impactSet,impactTable));
+		leftTopPanel.add(buttonPanel);
 				
 		
 		f.add(leftTopPanel, BorderLayout.WEST);

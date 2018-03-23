@@ -111,39 +111,47 @@ public class CSVUtils {
 	}
 
 	public static void write(ArrayList<FileObject> list) throws IOException {
-		
+
 		BufferedWriter writer = new BufferedWriter(new FileWriter("result" + File.separator + "res.csv"));
-		//writer.append("file,coupledFile,doc,cyclomatic complexity,code coverage,soc,long method,manyParameters\n");
+		// writer.append("file,coupledFile,doc,cyclomatic complexity,code
+		// coverage,soc,long method,manyParameters\n");
 		for (FileObject f : list) {
 			writer.append(f.toString() + "\n");
 		}
 		writer.close();
 	}
-	
+
+	public static void writeReport(ArrayList<String> list) throws IOException {
+
+		BufferedWriter writer = new BufferedWriter(new FileWriter("result" + File.separator + "report.csv"));
+		for (String f : list) {
+			writer.append(f + "\n");
+		}
+		writer.close();
+	}
+
 	public static void writeIAList(ArrayList<String> list) throws IOException {
-		
+
 		BufferedWriter writer = new BufferedWriter(new FileWriter("result" + File.separator + "IAset.csv"));
 		for (String f : list) {
 			writer.append(f + "\n");
 		}
 		writer.close();
 	}
-	
-	
+
 	public static List<CSVRecord> readResFile() throws IOException {
 		String csvFileInput = Paths.get(".").toAbsolutePath().normalize().toString();
 		csvFileInput += File.separator + "result" + File.separator + "" + "res.csv";
-		
+
 		File f = new File(csvFileInput);
-		if(!(f.exists() && !f.isDirectory())) { 
+		if (!(f.exists() && !f.isDirectory())) {
 			PrintWriter writer = new PrintWriter(csvFileInput, "UTF-8");
 		}
-		
-		
-		Reader in = new FileReader( csvFileInput );
-	    CSVParser parser = new CSVParser( in, CSVFormat.DEFAULT );
-	    List<CSVRecord> list = parser.getRecords();
-	    return list;
+
+		Reader in = new FileReader(csvFileInput);
+		CSVParser parser = new CSVParser(in, CSVFormat.DEFAULT);
+		List<CSVRecord> list = parser.getRecords();
+		return list;
 	}
 
 }
