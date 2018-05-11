@@ -14,7 +14,7 @@ public class FileObject {
 	private String codeCover;
 	private String sumOfCoupl;
 	private String longMethod;
-	private String manyParams = "0";
+	private String manyParams = "-";
 	
 	public FileObject(String fn, String cfn, String doc) {
 		fileName=fn;

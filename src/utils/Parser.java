@@ -100,14 +100,17 @@ public class Parser {
 		Scanner scanner = new Scanner(selectedFile);
 		int sum = 0;
 		int maxFunctionSize=0;
+		int ccMax=0;
 		scanner.nextLine();
 		while (scanner.hasNext()) {
 			List<String> line = CSVUtils.parseLine(scanner.nextLine());
-			sum += Integer.valueOf(line.get(3));
+			int cc=Integer.valueOf(line.get(3));
+			sum += cc;
+			ccMax=Math.max(ccMax, cc);
 			maxFunctionSize=Math.max(maxFunctionSize, Integer.valueOf(line.get(2)));
 		}
 		scanner.close();
-		obj.setCycloComplex(String.valueOf(sum));
+		obj.setCycloComplex(String.valueOf(sum )+ " (" + String.valueOf(ccMax)+")");
 		obj.setLongMethod(String.valueOf(maxFunctionSize));
 	}
 	
